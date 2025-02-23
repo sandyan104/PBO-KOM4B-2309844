@@ -18,12 +18,14 @@ public class NilaiMhs {
     char indeks;
     if (nilaiAkhir >= 80 && nilaiAkhir <= 100) {
       indeks = 'A';
-    } else if (nilaiAkhir >= 70 && nilaiAkhir < 80) {
+    } else if (nilaiAkhir >= 70) {
       indeks = 'B';
-    } else if (nilaiAkhir >= 50 && nilaiAkhir < 70) {
+    } else if (nilaiAkhir >= 50) {
       indeks = 'C';
-    } else {
+    } else if (nilaiAkhir >= 40) {
       indeks = 'D';
+    } else {
+      indeks = 'E';
     }
 
     System.out.println("Nilai Akhir: " + nilaiAkhir);
