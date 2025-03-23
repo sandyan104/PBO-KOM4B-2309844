@@ -16,7 +16,7 @@ class StopWatch {
         endTime = System.currentTimeMillis();
     }
     
-    public long duration() {
+    public long getElapsedTime() {
         return (endTime - startTime)/1000;
     }
 }
@@ -38,7 +38,7 @@ public class StopWatchTest {
         
         stopwatch.stop();
         
-        System.out.println("Waktu eksekusi selection sort: " + stopwatch.duration() + " detik");
+        System.out.println("Waktu eksekusi selection sort: " + stopwatch.getElapsedTime() + " detik");
     }
     
     public static void selectionSort(int[] arr) {
